@@ -6,8 +6,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 
 @SpringBootApplication
-@ComponentScans({ @ComponentScan(basePackages = "com.rakeshskc.config"),
-		@ComponentScan(basePackages = "com.rakeshskc.controller") })
+@ComponentScans({ 
+				  @ComponentScan(basePackages = "com.rakeshskc.config"),
+				  @ComponentScan(basePackages = "com.rakeshskc.controller"),
+				  @ComponentScan(basePackages = "com.rakeshskc.interceptor")
+			    })
 
 public class SpringDemoApplication {
 
