@@ -14,7 +14,7 @@ public class HelloWorldInterceptor implements HandlerInterceptor {
 	private Logger logger = LoggerFactory.getLogger(HelloWorldInterceptor.class);
 
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response) {
-		logger.debug("Inside Interceptor");
+		logger.info("Inside Interceptor");
 		return true; 
 	}
 
